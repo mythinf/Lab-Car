@@ -1,1 +1,18 @@
 /* Los estilos de tu proyecto */
+*{
+  box-sizing: border-box;
+  color:#ffff;
+}
+.img1{
+  background-image: url('../assets/images/taxi.jpg');
+  background-size: 100% auto;
+  background-position:bottom; /*muestra la parte inferior de la img en desktop*/
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.img2{
+  background: #FFA500;
+}
+.border-img{
+  border: 2px solid #ffff;
+}
