@@ -55,6 +55,13 @@
 footer{
   background: #191919;
 }
+.list-footer{
+ list-style: none;
+}
+.icon{
+  margin: 3px;
+}
+
 @media (min-width: @screen-lg-min){
   .hero{
     outline: 1px solid red;
