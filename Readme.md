@@ -1,4 +1,4 @@
-![Responsive-Desktop](assets/img/logoForma.png)
+![Responsive-Desktop](assets/images/logoForma.png)
 
 En el siguiente proyecto se mostrará el aplicativo LabCar en versión desktop y movil.
 
@@ -11,7 +11,7 @@ Se hizo uso del framework Bootstrap.
 
 ### Producto Final
  Vista de las diferentes pantallas
-![Responsive-Desktop](assets/img/screens.png)
+![Responsive-Desktop](assets/images/screens.png)
 
 Ventanas Emergentes (modales)
-![Responsive-Desktop](assets/img/modals.png)
+![Responsive-Desktop](assets/images/modals.png)
