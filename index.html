@@ -25,29 +25,66 @@
                 <!---AGREGANDO LOGO DE LABORATORIA--->
                 <a href="#"class="navbar-brand logo1"><img src="assets/images/logoForma.png" alt="logo1"></a>
               </div>
-              <!---AGREGANDO ITEMS DISPONIBLE SOLO PARA VERSION DESKTOP--->
+              <!---AGREGANDO ITEMS DISPONIBLE PARA VERSION DESKTOP Y EN VERSION MOVIL DENTRO DEL MENU HAMBURGUESA--->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">viaja</a></li>
                   <li><a href="#">conduce</a></li>
-                  <li><a href="#">iniciar sesión</a></li>
+                  <li><a href="#login" data-toggle="modal">iniciar sesión</a></li>
                 </ul>
+                <!---CREANDO VENTANA EMERGENTE(MODAL) PARA INICIAR SESIÓN--->
+                <div class="modal fade" id="login" tabindex="-5">
+                  <div class="modal-dialog">
+                    <div class="modal-content color-yellow">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img class="img-responsive center-block" src="assets/images/login.png" alt="login">
+                      </div><!---modal header--->
+                      <div class="modal-body">
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                              <h5><a href="#">Olvidó su contraseña?</a></h5>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-default center-block login-btn" data-dismiss="modal">Login</button>
+                        </form>
+                      </div>
+                      </div><!---modal-body--->
+                    </div><!---modal-content--->
+                  </div> <!---modal dialog--->
+                </div><!---modal fade--->
               </div>
-             </div>
-           </div>
+            </div>
+          </div>
+
         </nav>
       </header>
       <!---AGREGANDO SECTION HERO (BACKGROUND IMAGE 1)--->
       <section class="hero">
       <div class="container">
         <div class="row">
-    <!---<div class="col-md-5 pull-right floatBox">
-            <h5>Disfruta de tu viaje <br>eres dueño de tu tiempo.</h5>
-          </div>--->
-          <div class="col-xs-9 pull-right floatBox">
+      <!---<div class="col-md-5 pull-right floatBox">
+            <h3>Disfruta de tu viaje <br>eres dueño de tu tiempo.</h3>
+            <button class="btn btn-default" type="submit">Regístrate</button>
+           </div>--->
+          <div class="col-xs-9  pull-right floatBox">
             <h2>Comienza a viajar <br>con <a href="#"class="logo2"><img src="assets/images/logoBlanco.png" alt="logo1"></a></h2>
             <button class="btn btn-default" type="submit">Descarga el app</button>
           </div>
+
         </div>
       </div>
       </section>
@@ -74,8 +111,61 @@
             <h3>Conduce cuando quieras</h3>
             <br>
             <p>LabCar es un opción flexible para alcanzar tus metas financieras</p>
-            <a class="btn btn-default link-btn" href="#" role="button">Conviértete en conductor</a>
+            <a class="btn btn-default link-btn" href="#driver" data-toggle="modal" role="button">Conviértete en conductor</a>
           </div>
+          <!---CREANDO VENTANA EMERGENTE(MODAL) DRIVER--->
+          <div class="modal fade" id="driver" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content color-gray">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div><!---modal header--->
+                <div class="modal-body">
+                  <form>
+                    <fieldset>
+                      <div class="form-group">
+                        <label>¿Tiene vehículo de 4 puertas?</label>
+                        <select class="form-control">
+                          <option>No</option>
+                          <option>Sí</option>
+                        </select>
+                        <br>
+                        <label>Marca del vehículo</label>
+                        <select class="form-control">
+                          <option>Elige la marca del vehículo</option>
+                          <option>Ford</option>
+                          <option>Toyota</option>
+                          <option>Mitsubishi</option>
+                        </select>
+                        <h6>No encuentras la marca de tu vehículo? envíanos un email a <a href="#">LabCar@gmail.com</a></h6>
+                        <br>
+                        <label>Modelo</label>
+                        <select class="form-control">
+                          <option>Elige la marca el modelo</option>
+                          <option>.</option>
+                          <option>.</option>
+                          <option>.</option>
+                        </select>
+                        <br>
+                        <label>Año</label>
+                        <select class="form-control">
+                          <option>2017</option>
+                          <option>2015</option>
+                          <option>2013</option>
+                        </select>
+                        <br>
+                        <label>Número de matrícula</label>
+                        <input type="text" class="form-control" placeholder=" ">
+                        <h5>La información de la matrícula ayuda a los clientes a identificar tu vehículo</h5>
+                      </div>
+                  </form>
+                </div><!---modal-body--->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default center-block login-btn" data-dismiss="modal">Enviar</button>
+                </div><!---modal footer--->
+              </div><!---modal-content--->
+            </div> <!---modal dialog--->
+          </div><!---modal fade--->
         </div>
       </div>
       </section>
@@ -123,8 +213,10 @@
               <hr>
             </div>
           </div>
+        </div>
+        <div class="container">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-4 ok ">
               <ul class="list-footer">
                 <li>Viaja</li>
                 <li>Conduce</li>
@@ -132,31 +224,29 @@
                 <li>entrega</li>
                 <li>Cómo funciona</li>
               </ul>
-           </div>
-           <div class="col-sm-3"></div>
-           <div class="col-sm-6">
-             <div class="row">
-               <div class="col-sm-12">
-                 <span class="icon-google-plus2 icon"></span>
-                 <span class="icon-facebook2 icon"></span>
-                 <span class="icon-twitter icon"></span>
-                 <span class="icon-youtube icon"></span>
-               </div>
-               <div class="row">
-                 <div class="col-sm-12">
-                   <img src="assets/images/appstore.png" alt="footer-img">
-                   <img src="assets/images/enBadgeWebGeneric.png" alt="footer-img">
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-             <div class="col-sm-12">
-               <hr>
-               <p>&#169; 2017 LabCar technologies Inc.</p>
-             </div>
+              </div>
+              <div class="icons ok">
+                <span class="icon-google-plus2 icon"></span>
+                <span class="icon-facebook2 icon"></span>
+                <span class="icon-twitter icon"></span>
+                <span class="icon-youtube icon"></span>
+              </div>
+              <div class="app-store ok">
+                <img class="app-img" src="assets/images/appstore.png" alt="footer-img">
+                <img class="app-img" src="assets/images/enBadgeWebGeneric.png" alt="footer-img">
+              </div>
+
            </div>
         </div>
+        <div class="container">
+          <div class="row ">
+            <div class="col-sm-12">
+              <hr>
+              <p>&#169; 2017 LabCar technologies Inc.</p>
+            </div>
+          </div>
+        </div>
+
       </footer>
    <script type="text/javascript" src="vendors/js-jquery/jquery-3.2.1.min.js"></script>
    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>

@@ -3,8 +3,16 @@
   box-sizing: border-box;
   color: #ffff;
 }
+.navbar-right{
+  margin-right: 10px;
+}
+.login-btn{
+  background: #191919;
+  border: none;
+  color:#FFA500;
+}
 .hero{
-  outline: 1px solid red;
+
   background-image: url('../assets/images/taxi.jpg');
   background-size: 100% auto;
   background-position:bottom; /*muestra la parte inferior de la img en desktop*/
@@ -27,14 +35,11 @@
 .container-image-phone{
   margin-right: 20px;
   padding: 10px;
-  outline: 1px solid red;
-
 }
 .text{
   margin-left: 15px;
 }
 .hero-2{
-  outline: 1px solid red;
   background-image: url('../assets/images/conduce.jpg');
   background-size: cover;
   /*background-position:bottom; /*muestra la parte inferior de la img en desktop*/
@@ -46,6 +51,9 @@
   background: #FFA500;
   color: #ffff;
 }
+.color-gray{
+  background-color:#191919; 
+}
 .map{
   padding: 20px;
   border: 2px solid;
@@ -56,20 +64,27 @@ footer{
   background: #191919;
 }
 .list-footer{
+
  list-style: none;
+ padding: 0;
+}
+.app-img{
+  width: 100px;
 }
 .icon{
   margin: 3px;
 }
 
-@media (min-width: @screen-lg-min){
+@media (min-width: 768px){
   .hero{
-    outline: 1px solid red;
-    background-image: url('../assets/images/taxi.jpg');
-    background-size: 100% auto;
-    background-position:bottom; /*muestra la parte inferior de la img en desktop*/
     height: 100vh;
-    background-repeat: no-repeat;
+    padding: 0;
+  }
+  .floatBox{
+    margin-top: 20%;
+  }
+  .btn-floatBox{
+
   }
 
 }
