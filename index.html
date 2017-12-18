@@ -76,15 +76,68 @@
       <section class="hero">
       <div class="container">
         <div class="row">
-      <!---<div class="col-md-5 pull-right floatBox">
+          <!---AGREGANDO FLOATBOX VERSION DESKTOP--->
+          <div class="col-md-5 pull-right floatBox-desktop">
             <h3>Disfruta de tu viaje <br>eres dueño de tu tiempo.</h3>
+            <h4>Viajar con <a href="#"class="logo2"><img class="logo" src="assets/images/logoBlanco.png" alt="logo1"></a></h4>
             <button class="btn btn-default" type="submit">Regístrate</button>
-           </div>--->
-          <div class="col-xs-9  pull-right floatBox">
-            <h2>Comienza a viajar <br>con <a href="#"class="logo2"><img src="assets/images/logoBlanco.png" alt="logo1"></a></h2>
+            <br>
+            <div class="col-md-12 oBien ">
+              <h5>o bien</h5>
+            </div>
+            <button type="button" href="#singUp" data-toggle="modal" class="btn btn-primary btn-lg btn-block color-gray">Conviértete en un conductor</button>
+            <!---CREANDO VENTANA EMERGENTE(MODAL) SING UP--->
+            <div class="modal fade" id="singUp" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content color-gray">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div><!---modal header--->
+                  <div class="modal-body">
+                    <form>
+                      <fieldset>
+                        <div class="form-group">
+                          <button type="button" href="#singUp" data-toggle="modal" class="btn btn-primary btn-lg btn-block color-yellow">Ya tienes una cuenta?</button>
+                            <h6>O CREAR UNA CUENTA</h6>
+                            <br>
+                          <div class="row">
+                            <div class="col-md-6">
+                             <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col-md-6">
+                             <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                          </div>
+                          <br>
+                          <input type="text" class="form-control" placeholder="email">
+                          <br>
+                          <input type="text" class="form-control" placeholder="Teléfono">
+                          <br>
+                          <input type="text" class="form-control" placeholder="dirección">
+                          <br>
+                          <label>Cómo te enteraste de nosotros</label>
+                          <select class="form-control">
+                            <option>Elige una opción</option>
+                            <option>Facebook</option>
+                            <option>Radio</option>
+                            <option>Periódicos</option>
+                            <option>Otros</option>
+                          </select>
+                        </div>
+                    </form>
+                  </div><!---modal-body--->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block login-btn" data-dismiss="modal">Enviar</button>
+                  </div><!---modal footer--->
+                </div><!---modal-content--->
+              </div> <!---modal dialog--->
+            </div><!---modal fade--->
+           </div>
+           <!---AGREGANDO FLOATBOX VERSION MOBILE--->
+          <div class="col-xs-9  pull-right floatBox-mobile">
+            <h2>Comienza a viajar <br>con <a href="#"class="logo2"><img class="logo" src="assets/images/logoBlanco.png" alt="logo1"></a></h2>
             <button class="btn btn-default" type="submit">Descarga el app</button>
           </div>
-
         </div>
       </div>
       </section>
@@ -92,10 +145,13 @@
       <section class="color-yellow">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 container-image-phone ">
+            <div class="col-xs-12 col-md-6 container-image-phone ">
                 <img class="center-block img-phone" src="assets/images/iPhone6Plus.png" class="img-responsive" alt="Responsive image">
             </div>
-          </div>
+            <div class="col-md-6 info-image-phone info-desktop">
+              <h3>Descarga la nueva app</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
           <div class="row">
             <div class="col-xs-7 text">
               <p>Llega más rápido a tu destino</p>

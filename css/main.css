@@ -11,15 +11,20 @@
   border: none;
   color:#FFA500;
 }
+.logo{
+  width: 100px;
+}
 .hero{
-
   background-image: url('../assets/images/taxi.jpg');
   background-size: 100% auto;
   background-position:bottom; /*muestra la parte inferior de la img en desktop*/
   height: 80vh;
   background-repeat: no-repeat;
 }
-.floatBox{
+.floatBox-desktop{
+  display: none;
+}
+.floatBox-mobile{
   margin-top: 50%;
   background: #FFA500;
 }
@@ -35,6 +40,9 @@
 .container-image-phone{
   margin-right: 20px;
   padding: 10px;
+}
+.info-desktop{
+  display: none;
 }
 .text{
   margin-left: 15px;
@@ -52,7 +60,7 @@
   color: #ffff;
 }
 .color-gray{
-  background-color:#191919; 
+  background-color:#191919;
 }
 .map{
   padding: 20px;
@@ -80,11 +88,27 @@ footer{
     height: 100vh;
     padding: 0;
   }
-  .floatBox{
+  .floatBox-mobile{
+    display: none;
+  }
+  .floatBox-desktop{
+    display: block;
     margin-top: 20%;
+    background: #FFA500;
   }
-  .btn-floatBox{
+  .oBien{
+    text-align:center;
+  }
+  .img-phone{
+    border: 2px solid ;
+
+    height: 400px;
+    width: 400px;
+  }
+  .info-desktop{
+    display: inline-block;
+    position: absolute;
+    right: 0;
 
   }
-
 }
